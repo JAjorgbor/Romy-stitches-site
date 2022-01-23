@@ -1,0 +1,15 @@
+@use '../custom'as *;
+// gradient theme
+@mixin gradient {
+    background: linear-gradient(to right, rgba($light, 0.95), rgba($secondary, 0.95));
+}
+
+@mixin second-gradient {
+    background: linear-gradient(to right, rgba($light-yellow, 0.95), rgba($dark, 0.95))
+}
+
+// transition property
+@mixin transitionproperty {
+    transition-duration: 1000ms;
+    transition-property: all;
+}

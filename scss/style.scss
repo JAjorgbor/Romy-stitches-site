@@ -1,0 +1,8 @@
+@use 'custom';
+// import the components
+@use 'components/typography';
+@use 'components/mixins';
+// import the sections
+@use 'sections/header';
+@use 'sections/services';
+@use 'sections/products';

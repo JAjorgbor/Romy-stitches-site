@@ -1,0 +1,43 @@
+            @use '../custom' as *;
+            .first-navbar {
+                position: absolute !important;
+                #brand {
+                    width: 100px;
+                    @include media-breakpoint-up(md) {
+                        width: 200px;
+                    }
+                }
+            }
+            
+            .opening {
+                opacity: 0.85;
+                .card {
+                    p {
+                        font-family: 'Playfair Display', serif;
+                        @include media-breakpoint-down(sm) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            
+            .second-navbar {
+                ul {
+                    li {
+                        a {
+                            p {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .navbar-brand {
+                width: 90px;
+                height: 50px;
+                @include media-breakpoint-up(md) {
+                    width: 120px;
+                    height: 50px;
+                }
+            }

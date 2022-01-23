@@ -1,0 +1,23 @@
+@use '../custom' as*;
+@use '../components/mixins' as *;
+.aboutus {
+    .row {
+        .heading-line::before {
+            content: "";
+            width: 15rem;
+            height: 0.1rem;
+            display: block;
+            margin: 0 auto;
+            background-color: $dark;
+        }
+        .heading-line::after {
+            content: "";
+            width: 12rem;
+            height: 0.2rem;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            background-color: $dark;
+        }
+    }
+}

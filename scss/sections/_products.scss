@@ -1,0 +1,54 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+#categories {
+    @include second-gradient;
+    .heading-line::before {
+        content: "";
+        width: 15rem;
+        height: 0.1rem;
+        display: block;
+        margin: 0 auto;
+        background-color: $white;
+    }
+    .heading-line::after {
+        content: "";
+        width: 10rem;
+        height: 0.2rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        background-color: $white;
+    }
+    .card {
+        img {
+            &:hover {
+                transform: scale(1.05);
+                @include transitionproperty;
+            }
+        }
+    }
+}
+
+#contact {
+    .list-group-item {
+        color: $dark;
+        a {
+             :hover {
+                color: $primary;
+            }
+        }
+    }
+    #contact-form {
+        @include second-gradient;
+    }
+}
+
+footer {
+    p {
+        a {
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
